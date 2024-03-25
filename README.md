@@ -8,5 +8,8 @@ R scripts included in this repository utilize popular packages such as ggplot2, 
 
 
 
+![image](https://github.com/Jameel-Hu/Healthcaredata/assets/110083577/c74595dd-6efa-4871-9069-ff628443ca3e)
+
+
 
 
