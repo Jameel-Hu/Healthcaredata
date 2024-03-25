@@ -1,15 +1,11 @@
-# Healthcaredata
-SELECT  ROUND(AVG(time_in_hospital), 0) as days_stay, 
-      CASE HEN num_lab_procedures >= 0 AND num_lab_procedures < 25 THEN "few"
-          WHEN num_lab_procedures >= 25 AND num_lab_procedures < 55 THEN "average"
-          WHEN num_lab_procedures >= 55 THEN "many" END AS procedure_frequency
-      
-FROM patient.health
-GROUP BY procedure_frequency
-ORDER BY days_stay;
-SELECT d.race, ROUND(AVG(h.num_lab_procedures),1) as average_num_lab_procedures
-FROM patient.health h
-JOIN patient.demographics d
-ON h.patient_nbr=d.patient_nbr
-GROUP BY d.race
-ORDER BY average_num_lab_procedures DESC;
+Insurance companies often use various factors to determine premiums for their customers. Understanding the relationships between these factors and insurance costs is crucial for both insurers and policyholders. This project focuses on visualizing insurance data to uncover insights into how factors like gender, BMI, age, and smoking status impact insurance premiums.
+
+R scripts included in this repository utilize popular packages such as ggplot2, boxplot to create insightful visualizations. Some of the visualizations explored in this project include:
+![image](https://github.com/Jameel-Hu/Healthcaredata/assets/110083577/881b9ac8-d380-487c-93ae-82a2da877c9c
+
+![image](https://github.com/Jameel-Hu/Healthcaredata/assets/110083577/7861c7c6-4048-4e11-b8f1-169f8a9009ec)
+
+
+
+
+
